@@ -1,132 +1,441 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!doctype html>
+<html lang="pt-BR" data-theme="noite">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Henrique Ferreira - Desenvolvedor e Designer</title>
-  <meta name="description" content="Desenvolvedor Front End, localizado no Rio de Janeiro</p>">
-  <link rel="stylesheet" href="/css/style.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Ferreira · Software Engineer</title>
+  <meta name="description" content="Engenheiro de software no Rio de Janeiro. TypeScript, Node.js e Python em sistemas de pagamento, aplicativos e automações com IA em produção, com o passo a passo para conferir cada um.">
+  <meta name="theme-color" content="#0c0d0b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pedro Ferreira · Software Engineer">
+  <meta property="og:description" content="TypeScript, Node.js e Python em sistemas de pagamento, aplicativos e automações com IA. Cada item traz o passo a passo para conferir.">
+  <meta property="og:url" content="https://ferreiradrope.github.io/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
 </head>
-
 <body>
-  <header class="header">
-    <img src="img/logoportifolio.png" alt="Lobo" width="104px" height="38px">
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-  <main class="introducao">
-    <img src="/img/fotoportifiolio.png" alt="Minha foto" width="360px" height="520px" class="rounded-image">
-    <div>
-      <h1>Desenvolvedor<br>Front End<br></h1>
-      <p>Localizado no Rio de Janeiro</p>
+<header class="topo coluna">
+  <a class="marca" href="#inicio" aria-label="Pedro Ferreira, início">pf<span>_</span></a>
+  <nav aria-label="Seções">
+    <a href="#experiencia">Experiência</a>
+    <a href="#codigo">Código aberto</a>
+    <a href="#trajetoria">Trajetória</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <button class="tema" type="button" aria-label="Trocar para o light mode" title="Trocar tema">
+    <span class="tema-noite" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg></span><span class="tema-papel" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/></svg></span>
+  </button>
+</header>
+
+<main id="conteudo" class="coluna">
+
+  <section id="inicio" class="abertura">
+    <div class="quem">
+      <img class="avatar" src="./img/avatar.jpg" width="84" height="84" alt="Foto de Pedro Ferreira">
+      <div>
+        <h1>Pedro Ferreira</h1>
+        <p class="cargo">Software Engineer <span aria-hidden="true">·</span> TypeScript, Node.js, Python <span aria-hidden="true">·</span> Rio de Janeiro</p>
+      </div>
     </div>
-  </main>
-
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="subtitulo">Experiência</h2>
-    <div>
-      <p class="experiencia-texto"> Me chamo Pedro Henrique Ferreira e desenvolvo pequenos projetos utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Estou estudando para ser um desenvolvedor full-stack e a proxima tecnologia que pretendo aprender é o <strong>React</strong> com <strong>TypeScript</strong></p>
-
-      <div class="empresa">
-        <span class="empresa-ano">2045</span>
-        <h3 class="empresa-titulo">Empresa</h3>
-        <span class="empresa-titulo">Cargo</span>
-        <p class="empresa-texto">Descrição do trabalho</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2044-45</span>
-        <h3 class="empresa-titulo">Empresa</h3>
-        <span class="empresa-titulo">Cargo</span>
-        <p class="empresa-texto">Descrição do trabalho</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2044</span>
-        <h3 class="empresa-titulo">Empresa</h3>
-        <span class="empresa-titulo">Cargo</span>
-        <p class="empresa-texto">Descrição do trabalho</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
+    <p class="pitch">Sou engenheiro de software e trabalho com sistemas que já estão em produção: plataformas de pagamento, aplicativos nas lojas e automações com IA. Estudo programação desde 2024, trabalho na área desde julho de 2025 e curso Ciência da Computação à noite.</p>
+    <p class="pitch segundo">No dia a dia uso TypeScript, Node.js e Python, com React e React Native na interface e PostgreSQL e Firestore nos dados. Gosto de entender o problema inteiro, do que a pessoa vê na tela ao pagamento que precisa cair na conta.</p>
+    <div class="acoes">
+      <a class="botao cheio" href="mailto:pedrohferreira98@hotmail.com">Escrever um e-mail</a>
+      <a class="botao" href="https://github.com/ferreiradrope" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+      <a class="botao" href="https://www.linkedin.com/in/pedrohferreirarj/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 
-  <section class="formacao" id="formacao" aria-label="Formação">
-    <div class="formacao-container">
-      <h2 class="subtitulo">Formação</h2>
+  <section class="janela-area" aria-label="Resumo">
+    <div class="janela">
+      <div class="janela-barra">
+        <span class="bolinhas" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="aba">resumo.json</span>
+      </div>
+      <div class="codigo">
+        <div class="l"><span class="p">{</span></div>
+        <div class="l">  <span class="k">"função"</span><span class="p">: </span><span class="s">"Software Engineer"</span><span class="p">,</span></div>
+        <div class="l">  <span class="k">"estuda programação desde"</span><span class="p">: </span><span class="n">2024</span><span class="p">,</span></div>
+        <div class="l">  <span class="k">"trabalha com software desde"</span><span class="p">: </span><span class="s">"07/2025"</span><span class="p">,</span></div>
+        <div class="l">  <span class="k">"formação"</span><span class="p">: </span><span class="s">"Ciência da Computação, IBMR"</span><span class="p">,</span></div>
+        <div class="l">  <span class="k">"linguagens"</span><span class="p">: [</span><span class="s">"TypeScript"</span><span class="p">, </span><span class="s">"Python"</span><span class="p">],</span></div>
+        <div class="l">  <span class="k">"em produção"</span><span class="p">: {</span></div>
+        <div class="l">    <span class="k">"plataformas de matrícula e cobrança"</span><span class="p">: </span><span class="n">5</span><span class="p">,</span></div>
+        <div class="l">    <span class="k">"aplicativos nas lojas"</span><span class="p">: </span><span class="n">2</span><span class="p">,</span></div>
+        <div class="l">    <span class="k">"downloads do maior deles"</span><span class="p">: </span><span class="s">"100 mil+"</span><span class="p">,</span></div>
+        <div class="l">    <span class="k">"chatbots com IA"</span><span class="p">: </span><span class="n">2</span></div>
+        <div class="l">  <span class="p">}</span></div>
+        <div class="l"><span class="p">}</span></div>
+      </div>
+      <div class="janela-rodape"><span>JSON</span><span>UTF-8</span><span>atualizado em 10/11/2026</span></div>
+    </div>
+  </section>
 
-      <div>
-        <p class="formacao-texto">Minha mais recente experiencia acadêmica foi ter iniciado a <strong>Graduação</strong> em Engenharia de Software. Além disso me mantenho sempre atualizado com cursos intensivos online, como o do Origamid.</p>
+  <section class="regra">
+    <p><span class="selo publico">público</span> você mesmo confere em menos de um minuto, com o passo a passo.</p>
+    <p><span class="selo privado">código privado</span> o produto está no ar, mas o repositório é do cliente. Aí eu descrevo o que fiz.</p>
+  </section>
 
+  <section id="experiencia" class="bloco">
+    <h2><span class="num">01</span> Experiência</h2>
 
-        <ul class="faculdade-lista">
-          <li class="faculdade">
-            <span class="faculdade-tipo">Bacharel</span>
-            <h3 class="faculdade-curso">Engenharia de Software</h3>
-            <span class="faculdade-instituicao">UNINTER</span>
-          </li>
+    <div class="grupo">
+      <h3>4tuna</h3>
+      <p>Desenvolvedor Full Stack Júnior <span aria-hidden="true">·</span> 07/2025 – atual <span aria-hidden="true">·</span> remoto</p>
+    </div>
 
+    <article class="item">
+      <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2" /> <line x1="2" x2="22" y1="10" y2="10" /> <path d="M6 14h2" /></svg></div>
+      <div class="corpo">
+        <header>
+          <h4>Plataformas de matrícula e cobrança</h4>
+          <span class="selo publico">no ar</span><span class="selo privado">código privado</span>
+        </header>
+        <p class="meta">5 escolas e oficinas de música · Python/Flask · Next.js/TypeScript · Firestore · Pagar.me</p>
+        <p>É a minha frente principal. Desenvolvo e mantenho os sistemas em que os alunos se inscrevem e pagam, e em que as escolas acompanham turmas e recebimentos. Juntas, somam cerca de 300 matrículas ativas.</p>
+        <ul class="feitos">
+          <li>Matrícula on-line, com painel do aluno, do professor e do administrador.</li>
+          <li>Cobrança recorrente por PIX, boleto e cartão, com parcelamento e pró-rata.</li>
+          <li>Split de recebíveis entre a plataforma e a escola.</li>
+          <li>Régua de inadimplência, com avisos por WhatsApp e e-mail.</li>
+          <li>Conciliação diária com o gateway, por webhooks e rotinas agendadas.</li>
+          <li>Emissão automática de nota fiscal de serviço (NFS-e).</li>
+          <li>Login por telefone e e-mail, com a migração de 274 contas para o Firebase Authentication.</li>
+          <li>Troca do gateway de pagamento, do Asaas para o Pagar.me, em fases, mantendo as cobranças em andamento no gateway antigo.</li>
         </ul>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>As cinco estão no ar. Abra qualquer uma.</li>
+            <li>Siga o formulário de matrícula até a etapa de pagamento. Não precisa concluir.</li>
+          </ol>
+        <ul class="escolas">
+          <li>
+            <img src="./img/icones/orquestra.png" width="38" height="38" alt="" loading="lazy">
+            <div><strong>Orquestra Voadora</strong><span>Python/Flask. A maior: cerca de 1.800 parcelas, com quatro rotinas diárias.</span></div>
+            <a class="confira" href="https://oficinaorquestravoadora2026.55jam.com.br" target="_blank" rel="noopener">Confira</a>
+          </li>
+          <li>
+            <img src="./img/icones/academia.png" width="38" height="38" alt="" loading="lazy">
+            <div><strong>Academia Cristã de Música</strong><span>Python/Flask. Turmas, financeiro e carteirinha do aluno.</span></div>
+            <a class="confira" href="https://academiacrista.55jam.com.br" target="_blank" rel="noopener">Confira</a>
+          </li>
+          <li>
+            <img src="./img/icones/percusamba.png" width="38" height="38" alt="" loading="lazy">
+            <div><strong>PercuSamba</strong><span>Python/Flask. Split de recebíveis e cobrança automática por WhatsApp.</span></div>
+            <a class="confira" href="https://percusamba.55jam.com.br" target="_blank" rel="noopener">Confira</a>
+          </li>
+          <li>
+            <img src="./img/icones/percussaca.png" width="38" height="38" alt="" loading="lazy">
+            <div><strong>Percussaça</strong><span>Next.js, TypeScript e Firestore. No ar em 10 dias, com 84 testes automatizados.</span></div>
+            <a class="confira" href="https://percussaca.55jam.com.br" target="_blank" rel="noopener">Confira</a>
+          </li>
+          <li>
+            <img src="./img/icones/choro.png" width="38" height="38" alt="" loading="lazy">
+            <div><strong>Choro Batucada</strong><span>Next.js, TypeScript e Firestore. Matrícula, mensalidades e área de aulas em vídeo.</span></div>
+            <a class="confira" href="https://chorobatucada.55jam.com.br" target="_blank" rel="noopener">Confira</a>
+          </li>
+        </ul>
+        </details>
+      </div>
+    </article>
 
-        <div class="formacao-extra">
-          <div class="cursos">
-            <h3>Cursos Intensivos</h3>
-            <ul>
-              <li>Algorimo - Curso em video <span>40h</span></li>
-              <li>HTML e CSS para iniciantes - Origamid <span>23h</span></li>
-              <li>JavaScript Completo ES6 - Origamid <span>37h</span></li>
-            </ul>
+    <article class="item">
+      <img class="icone foto" src="./img/icones/scaleclock.png" width="48" height="48" alt="" loading="lazy">
+      <div class="corpo">
+        <header>
+          <h4>ScaleClock</h4>
+          <span class="selo publico">público</span><span class="selo privado">código privado</span>
+        </header>
+        <p class="meta">Aplicativo de música · React Native · Django · PostgreSQL</p>
+        <p>O aplicativo existe desde 2019 e estava fora do ar para assinantes quando chegou até mim. Recoloquei em funcionamento e hoje mantenho o app e a API.</p>
+        <ul class="feitos">
+          <li>Corrigi autenticação, pagamentos e e-mails transacionais e publiquei as novas versões na Google Play e na App Store.</li>
+          <li>Mantenho a API REST em Django, com PostgreSQL, para um produto com mais de 110 mil contas.</li>
+          <li>Auditei as assinaturas cruzando o banco com as APIs do Google Play, da Apple e do Stripe: havia 1.041 contas com acesso PRO para 19 assinaturas pagas.</li>
+          <li>Fechei endpoints que estavam sem controle de autorização, sem quebrar a versão publicada.</li>
+        </ul>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>Abra a página do app na Google Play.</li>
+            <li>Logo abaixo do nome aparece “100 mil+ downloads”.</li>
+            <li>Em “Sobre este app”, veja a data da última atualização.</li>
+          </ol>
+          <div class="links">
+            <a class="confira" href="https://play.google.com/store/apps/details?id=com.scaleclock" target="_blank" rel="noopener">Google Play</a>
+            <a class="confira" href="https://apps.apple.com/br/app/scaleclock/id1464221197" target="_blank" rel="noopener">App Store</a>
           </div>
+        </details>
+      </div>
+    </article>
 
-          <div class="idiomas">
-            <h3>Idiomas</h3>
-            <ul>
-              <li>Inglês<span>/ Avançado</span></li>
-            </ul>
+    <article class="item">
+      <img class="icone foto" src="./img/icones/kids2gether.png" width="48" height="48" alt="" loading="lazy">
+      <div class="corpo">
+        <header>
+          <h4>Kids2gether</h4>
+          <span class="selo publico">público</span><span class="selo privado">código privado</span>
+        </header>
+        <p class="meta">Aplicativo mobile · React Native · Node.js no Firebase</p>
+        <p>Mesmo trabalho de recuperação: o app estava inutilizável para quem pagava.</p>
+        <ul class="feitos">
+          <li>Restabeleci login, pagamentos, exclusão de conta, mapa e e-mails transacionais.</li>
+          <li>Publiquei as versões novas na Google Play e na App Store, e os assinantes voltaram a usar.</li>
+          <li>Mantive o back-end em Node.js, com Cloud Functions e Firestore.</li>
+        </ul>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>Abra o app em uma das lojas.</li>
+            <li>Veja a data da última versão publicada.</li>
+          </ol>
+          <div class="links">
+            <a class="confira" href="https://play.google.com/store/apps/details?id=com.kids2gether" target="_blank" rel="noopener">Google Play</a>
+            <a class="confira" href="https://apps.apple.com/br/app/kids2gether/id1554942484" target="_blank" rel="noopener">App Store</a>
           </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6V2H8" /> <path d="M15 11v2" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z" /> <path d="M9 11v2" /></svg></div>
+      <div class="corpo">
+        <header>
+          <h4>Chatbots de WhatsApp com IA</h4>
+          <span class="selo privado">sem link público</span>
+        </header>
+        <p class="meta">2 chatbots · API da OpenAI · n8n · Supabase</p>
+        <p>Construí dois chatbots que respondem dúvidas pelo WhatsApp consultando antes o conteúdo do site do cliente (RAG), para não inventar resposta. Rodam dentro do WhatsApp dos clientes, então não há página para abrir. Explico o fluxo em uma conversa.</p>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="icone foto clara" src="./img/icones/praiativa.svg" width="48" height="48" alt="" loading="lazy">
+      <div class="corpo">
+        <header>
+          <h4>PraiAtiva</h4>
+          <span class="selo publico">no ar</span><span class="selo privado">código privado</span>
+        </header>
+        <p class="meta">Meu primeiro projeto na 4tuna · React · TypeScript · Supabase</p>
+        <p>Plataforma que liga quem pratica atividade física na praia a quem oferece as aulas, selecionada pelo programa Acelera Niterói. Fui um dos dois desenvolvedores da primeira versão: modelagem do banco, front-end e back-end, até o primeiro pagamento processado dentro da plataforma.</p>
+        <div class="links solto">
+          <a class="confira" href="https://www.praiativa.com/" target="_blank" rel="noopener">praiativa.com</a>
         </div>
       </div>
+    </article>
+
+    <article class="item">
+      <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 5h8" /> <path d="M13 12h8" /> <path d="M13 19h8" /> <path d="m3 17 2 2 4-4" /> <path d="m3 7 2 2 4-4" /></svg></div>
+      <div class="corpo">
+        <header>
+          <h4>Integração contínua e testes</h4>
+          <span class="selo privado">código privado</span>
+        </header>
+        <p class="meta">GitHub Actions · Vitest · testes em Python</p>
+        <p>Configurei a verificação automática nos repositórios das plataformas: a cada push rodam lint, testes, build e auditoria de dependências, além de uma varredura que procura senha ou chave esquecida no código. Se algo falha, o aviso chega antes de a mudança ir para a branch principal.</p>
+      </div>
+    </article>
+
+    <article class="item">
+      <img class="icone foto" src="./img/icones/ticketbaile.svg" width="48" height="48" alt="" loading="lazy">
+      <div class="corpo">
+        <header>
+          <h4>Ticket Baile</h4>
+          <span class="selo privado">em desenvolvimento</span>
+        </header>
+        <p class="meta">Next.js · TypeScript · Firestore · Vitest</p>
+        <p>Ticketaria para bailes: compra e carteira de ingressos com QR Code para o público, e painel de eventos e financeiro para quem produz. Ainda não está aberta ao público; o link é do ambiente de desenvolvimento.</p>
+        <div class="links solto">
+          <a class="confira" href="https://dev.ticketbaile.55jam.com.br/" target="_blank" rel="noopener">Ambiente de desenvolvimento</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="grupo">
+      <h3>Codifica</h3>
+      <p>Cofundador <span aria-hidden="true">·</span> 2025 – atual</p>
+    </div>
+
+    <article class="item">
+      <img class="icone foto clara" src="./img/icones/codifica.svg" width="48" height="48" alt="" loading="lazy">
+      <div class="corpo">
+        <header>
+          <h4>Sites e sistemas sob demanda</h4>
+          <span class="selo publico">público</span>
+        </header>
+        <p class="meta">Estúdio de software com um amigo</p>
+        <p>Atendo o cliente desde a primeira conversa: levanto o que ele precisa, desenvolvo e entrego o site ou o sistema no ar. É onde mais pratico entender o problema antes de escrever código.</p>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>Abra o site da Codifica.</li>
+            <li>Role até “Quem faz o seu site”.</li>
+          </ol>
+          <div class="links">
+            <a class="confira" href="https://ccodifica.com.br/" target="_blank" rel="noopener">ccodifica.com.br</a>
+          </div>
+        </details>
+      </div>
+    </article>
   </section>
 
-  <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa</p>
-      <ul class="footer-contato">
-        <li><i class="fas fa-envelope"></i> <a href="mailto:pedrohferreira98@hotmail.com">pedrohferreira98@hotmail.com</a></li>
-        <li><i class="fas fa-phone"></i> +55 21 992370808</li>
-        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/pedroferreirah_/">@pedroferreirah_</a></li>
-      </ul>
-      <p class="footer-copy">Pedro Henrique Ferreira. Alguns direitos reservados.</p>
+  <section id="codigo" class="bloco">
+    <h2><span class="num">02</span> Código aberto</h2>
+    <p class="sub">Projetos da faculdade e dos meus primeiros passos, com repositório público.</p>
+
+    <article class="item">
+      <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /> <path d="M7 2v20" /> <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg></div>
+      <div class="corpo">
+        <header>
+          <h4>PratoFácil</h4>
+          <span class="selo publico">público</span>
+        </header>
+        <p class="meta">Java 21 · Spring Boot · PostgreSQL · JUnit 5 · Docker · 2026</p>
+        <p>Sistema de pedidos para pequenos empreendedores, feito em equipe de 13 na disciplina de Sistemas Distribuídos. Fui o principal contribuidor: API com Spring MVC, Data JPA e Security, pagamentos via Asaas, documentação OpenAPI e deploy no Render.</p>
+        <p class="vivo" id="vivo-frase">Pelo histórico do repositório: 40 de 44 commits são meus.</p>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>Abra o repositório.</li>
+            <li>Na coluna da direita, clique em “Contributors”.</li>
+            <li>Procure por <code>ferreiradrope</code> e veja a contagem de commits.</li>
+          </ol>
+          <div class="links">
+            <a class="confira" href="https://github.com/marciodosanjos/pratoFacil" target="_blank" rel="noopener">Repositório</a>
+            <a class="confira" href="https://github.com/marciodosanjos/pratoFacil/graphs/contributors" target="_blank" rel="noopener">Contributors</a>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" /> <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244" /> <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" /></svg></div>
+      <div class="corpo">
+        <header>
+          <h4>MantovaniHub</h4>
+          <span class="selo publico">público</span>
+        </header>
+        <p class="meta">Next.js · React · TypeScript · Supabase · 2026</p>
+        <p>Sistema de produção, estoque e vendas de uma charcutaria, feito em equipe de 14 com Scrum e histórias de usuário na disciplina de Modelagem de Software. Está publicado na Vercel.</p>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>Abra a versão publicada e navegue pela loja.</li>
+            <li>No repositório, veja o histórico de commits.</li>
+          </ol>
+          <div class="links">
+            <a class="confira" href="https://mantovanihub.vercel.app" target="_blank" rel="noopener">Versão publicada</a>
+            <a class="confira" href="https://github.com/ferreiradrope/MantovaniHub" target="_blank" rel="noopener">Repositório</a>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" /> <path d="M8 7v7" /> <path d="M12 7v4" /> <path d="M16 7v9" /></svg></div>
+      <div class="corpo">
+        <header>
+          <h4>Kanban</h4>
+          <span class="selo publico">público</span>
+        </header>
+        <p class="meta">React · TypeScript · Docker · 03/2025</p>
+        <p>Um dos meus primeiros projetos, de março de 2025: um quadro kanban para organizar tarefas. A base da interface foi gerada com a Lovable. Eu empacotei com Docker, escrevi a documentação e publiquei na Vercel. Foi aqui que usei Docker pela primeira vez.</p>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>Abra a versão publicada.</li>
+            <li>No repositório, o <code>Dockerfile</code> e o histórico mostram o que eu fiz.</li>
+          </ol>
+          <div class="links">
+            <a class="confira" href="https://kanban-app-beta.vercel.app" target="_blank" rel="noopener">Versão publicada</a>
+            <a class="confira" href="https://github.com/ferreiradrope/kanban.app" target="_blank" rel="noopener">Repositório</a>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11" /> <line x1="8" x2="8" y1="9" y2="13" /> <line x1="15" x2="15.01" y1="12" y2="12" /> <line x1="18" x2="18.01" y1="10" y2="10" /> <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg></div>
+      <div class="corpo">
+        <header>
+          <h4>SnakeGame</h4>
+          <span class="selo publico">público</span>
+        </header>
+        <p class="meta">Java · trabalho em grupo da faculdade · 2025</p>
+        <p>O jogo da cobrinha em Java, feito em grupo no primeiro ano do curso. Foi meu primeiro projeto em Java, antes do PratoFácil.</p>
+        <details>
+          <summary>Como conferir</summary>
+          <ol>
+            <li>Abra o repositório.</li>
+            <li>O código do jogo está na pasta <code>src</code>, em Java.</li>
+          </ol>
+          <div class="links">
+            <a class="confira" href="https://github.com/ferreiradrope/SnakeGame" target="_blank" rel="noopener">Repositório</a>
+          </div>
+        </details>
+      </div>
+    </article>
+  </section>
+
+  <section id="trajetoria" class="bloco">
+    <h2><span class="num">03</span> Trajetória</h2>
+    <ol class="tempo">
+      <li><time>2021</time><div><strong>Primeiro contato com programação</strong><span>Curso de Algoritmos do Gustavo Guanabara, no Curso em Vídeo. Foi só um primeiro contato; o estudo a sério veio depois.</span></div></li>
+      <li><time>2024</time><div><strong>HTML, CSS, JavaScript e os primeiros projetos</strong><span>Cursos da Origamid, junto com projetos próprios e automações em Python.</span></div></li>
+      <li><time>02/2025</time><div><strong>Ciência da Computação no IBMR</strong><span>Bacharelado noturno, com conclusão prevista para 11/2028. Estou no 4º período.</span></div></li>
+      <li><time>07/2025</time><div><strong>Primeiro emprego como desenvolvedor</strong><span>Entrei na 4tuna: primeiro o PraiAtiva, depois a recuperação de dois aplicativos que estavam fora do ar.</span></div></li>
+      <li class="agora"><time>2026</time><div><strong>Sistemas de pagamento em produção, na 4tuna</strong><span>Sigo na 4tuna, agora com cinco plataformas de matrícula e cobrança no ar e dois aplicativos mantidos nas lojas.</span></div></li>
+      <li class="futuro"><time>a seguir</time><div><strong>Em aberto</strong><span>Pode ser com você.</span>
+        <div class="gancho">
+          <a class="confira" href="mailto:pedrohferreira98@hotmail.com">Mandar um e-mail</a>
+          <a class="confira" href="https://wa.me/5521992370808?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+      </div></li>
+    </ol>
+  </section>
+
+  <section class="bloco">
+    <h2><span class="num">04</span> Com o que trabalho</h2>
+    <dl class="stack">
+      <div><dt>Linguagens</dt><dd>TypeScript, JavaScript, Python, Java, SQL</dd></div>
+      <div><dt>Back-end</dt><dd>Node.js, Django, Flask, Spring Boot, APIs REST, webhooks</dd></div>
+      <div><dt>Interface</dt><dd>React, Next.js, React Native, HTML, CSS, Tailwind CSS</dd></div>
+      <div><dt>Dados</dt><dd>PostgreSQL, Supabase, Firestore</dd></div>
+      <div><dt>Pagamentos</dt><dd>Pagar.me, Asaas, Stripe, PIX, boleto, cartão, split, NFS-e</dd></div>
+      <div><dt>IA</dt><dd>API da OpenAI, n8n, RAG, Claude Code</dd></div>
+      <div><dt>Testes e entrega</dt><dd>Vitest, JUnit 5, GitHub Actions, Git, Docker (básico), Vercel, Render, Firebase</dd></div>
+      <div class="estudo"><dt>Estudando agora</dt><dd>Node.js e PostgreSQL a fundo, testes, algoritmos e estruturas de dados, Docker, AWS e inglês.</dd></div>
+      <div><dt>Idiomas</dt><dd>Português nativo. Inglês intermediário (B1), com leitura técnica fluente.</dd></div>
+    </dl>
+  </section>
+
+  <section id="contato" class="bloco contato">
+    <h2><span class="num">05</span> Contato</h2>
+    <p class="pitch">Estou aberto a vagas de engenharia de software, remotas ou no Rio de Janeiro.</p>
+    <div class="email">
+      <a href="mailto:pedrohferreira98@hotmail.com">pedrohferreira98@hotmail.com</a>
+      <button class="copiar" type="button">copiar</button>
+      <span id="copiado" role="status"></span>
     </div>
-  </footer>
+    <div class="acoes">
+      <a class="botao" href="https://wa.me/5521992370808?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio." target="_blank" rel="noopener">WhatsApp <span aria-hidden="true">↗</span></a>
+      <a class="botao" href="https://www.linkedin.com/in/pedrohferreirarj/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a class="botao" href="https://github.com/ferreiradrope" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</main>
 
+<footer class="coluna rodape">
+  <span>© 2026 Pedro Ferreira</span>
+  <span>Números conferidos em 10/11/2026.</span>
+  <a href="#inicio">Voltar ao topo ↑</a>
+</footer>
 </body>
-
 </html>
